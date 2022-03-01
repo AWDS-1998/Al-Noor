@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Noor Library</title>
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./scss/main.css" />
+</head>
+
+<body>
+    <!-- copyright for awds -->
+    <div class="copyRight" id="copyRightAWDS">
+        <h1>Modify Design <span> By AWDS
+                Abdullah Al Osimi</span>
+        </h1>
+        <hr>
+        <p>+967 717 216 401</p>
+        <p>+967 779 191 925</p>
+        <hr>
+        <a href="https://www.instagram.com/awds_sdwa/">Instagram</a>
+    </div>
+    <!-- fixed button for language -->
+    <button class="btn-fixed-lang"><img src="./image/svg/language.svg" alt="icon language">Arabic</button>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <img src="./image/png/logo.png" alt="Logo brand" class="logo">
+            <button class="btn-langoug"><img src="./image/svg/language.svg" alt="icon language"> Arabic </button>
+            <div class="group-btn">
+                <button class="btn-login"><img src="./image/svg/login.svg" alt="login icon">Login</button>
+                <button class="btn-signup"><img src="./image/svg/createAccount.svg" alt="create icon">create
+                    account</button>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start nav -->
+    <nav>
+        <div class="container">
+            <div class="nav-links">
+                <div class="noor-icon">
+                    <img src="./image/png/nooricon.png" alt="noor icon" />
+                </div>
+                <ul>
+                    <li class="active-link"><a href="#">Home</a></li>
+                    <li><a href="sections-book.html">Sections</a></li>
+                    <li><a href="#">Author</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+                <input type="search" name="search" id="search" placeholder="Search" />
+            </div>
+            <div class="group-btn">
+                <button class="btn-login"><img src="./image/svg/login.svg" alt="login icon">Login</button>
+                <button class="btn-signup"><img src="./image/svg/createAccount.svg" alt="create icon">create
+                    account</button>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!--start landing -->
+    <div class="landing">
+        <div class="container">
+            <h1>Al Noor Library</h1>
+            <p>The largest Arab library electronic For Books</p>
+            <form>
+                <img src="./image/svg/search.svg" alt="search icon">
+                <input autocomplete="" type="search" name="search"
+                    placeholder="Search for book or author or books sections" id="search">
+                <input type="submit" value="Search">
+            </form>
+            <div class="btn-group">
+                <button><a href="#todayTops">Today Tops</a></button>
+                <button><a href="#topBook">Top Books</a></button>
+                <button><a href="#newBooks">New Books</a></button>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#19a99f" fill-opacity="1"
+                d="M0,160L60,133.3C120,107,240,53,360,48C480,43,600,85,720,85.3C840,85,960,43,1080,32C1200,21,1320,43,1380,53.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <!--end landing -->
+    <!-- start test-card -->
+    <div class="content-card">
+        <h1 id="topBook">Top Books In This Day</h1>
+        <div class="container">
+            <div class="card">
+                <div class="image-author">
+                    <img src="./image/png/author-1.png" alt="Picture Other">
+                </div>
+                <div class="image images">
+                    <img class="images" id="book-image-01" src="./image/books-img/afterBook.jpg" alt="after book">
+                </div>
+                <div class="control">
+                    <span onclick='document.getElementById("book-image-01").src="./image/books-img/afterBook.jpg";'
+                        class="next"><img src="./image/svg/Vector.svg" alt=""></span>
+                    <span onclick='document.getElementById("book-image-01").src="./image/books-img/pages/01.jpg";'
+                        class="back"><img src="./image/svg/Vector.svg" alt=""></span>
+                </div>
+                <h3>After Book</h3>
+                <p class="author">Abdullah Al Osimi</p>
+            </div>
+            <div class="card">
+                <div class="image-author">
+                    <img src="./image/svg/bulk-user-square.svg" alt="Picture Other">
+                </div>
+                <div class="image images">
+                    <img id="book-image-02" src="./image/books-img/koranBook.jpg" alt="Quran">
+                </div>
+                <div class="control">
+                    <span onclick='document.getElementById("book-image-02").src="./image/books-img/koranBook.jpg";'
+                        class="next"><img src="./image/svg/Vector.svg" alt=""></span>
+                    <span onclick='document.getElementById("book-image-02").src="./image/books-img/pages/02.jpg";'
+                        class="back"><img src="./image/svg/Vector.svg" alt=""></span>
+                </div>
+                <h3>Al Quran</h3>
+                <p class="author">Book Form Allah</p>
+            </div>
+            <div class="card">
+                <div class="image-author">
+                    <img src="./image/svg/bulk-user-square.svg" alt="Picture Other">
+                </div>
+                <div class="image images">
+                    <img id="book-image-03" src="./image/books-img/sahihBook.png" alt="Sahih Book">
+                </div>
+                <div class="control">
+                    <span onclick='document.getElementById("book-image-03").src="./image/books-img/sahihBook.png";'
+                        class="next"><img src="./image/svg/Vector.svg" alt=""></span>
+                    <span onclick='document.getElementById("book-image-03").src="./image/books-img/pages/02.jpg";'
+                        class="back"><img src="./image/svg/Vector.svg" alt=""></span>
+                </div>
+                <h3>Sahih Book</h3>
+                <p class="author">Abdulrhman</p>
+            </div>
+        </div>
+    </div>
+    <!-- end test-card -->
+    <script src="./js/main.js">
+        /*nextChingePic = () => {
+            document.getElementById('book-image').src = "./image/books-img/afterBook.jpg";
+        }
+        backChingePic = () => {
+            document.getElementById('book-image').src = "./image/books-img/pages/01.jpg";
+        }*/
+    </script>
+</body>
+
+</html>

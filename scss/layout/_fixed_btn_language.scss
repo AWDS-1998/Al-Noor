@@ -1,0 +1,29 @@
+.btn-fixed-lang {
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+  overflow: hidden;
+  padding: 2px;
+  width: 35px;
+  height: 35px;
+  transition: $primary-transition;
+  background: $primary-color;
+  color: $light-white;
+  z-index: 99999;
+  border: {
+    width: 0;
+    radius: 50%;
+  }
+  @include d-flex(row, space-between, center, no-wrap);
+  > img {
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  &:hover {
+    width: 85px;
+    border: {
+      radius: 5px;
+    }
+    padding-right: 50px;
+  }
+}
